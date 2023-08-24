@@ -1,26 +1,25 @@
 *This directory contains an example Kubernetes application (app) based on
-WordPress for the purpose of demonstrating app integration with
+Nuevctor with SUSE CSPA for the purpose of demonstrating app integration with
 Google Cloud Marketplace. **Not intended for actual use!***
 
 *Content below is intended as a template for end-user documentation.*
 
 # Overview
+Nuevctor container security project
 
-WordPress is a free and open-source content management system (CMS) based on PHP
-and MySQL...
 
 # Installation
 
 ## Quick install with Google Cloud Marketplace
 
-Get up and running with a few clicks! Install this WordPress app to a
+Get up and running with a few clicks! Install this Nuevctor app to a
 Google Kubernetes Engine cluster using Google Cloud Marketplace. Follow the on-screen
 instructions:
 *TODO: link to product details page*
 
 ## Command line instructions
 
-Follow these instructions to install WordPress from the command line.
+Follow these instructions to install Nuevctor from the command line.
 
 ### Prerequisites
 
@@ -46,7 +45,7 @@ gcloud auth configure-docker
 Create a new cluster from the command line:
 
 ```shell
-export CLUSTER=wordpress-cluster
+export CLUSTER=nuevector-cluster
 export ZONE=us-west1-a
 
 gcloud container clusters create "$CLUSTER" --zone "$ZONE"
@@ -96,7 +95,7 @@ from the "Deploy via command line" tab. Apply it in the target namespace.
 
 Set environment variables (modify if necessary):
 ```
-export name=wordpress-1
+export name=nuevector-1
 export namespace=default
 
 # Use the name of the secret created for the license key
